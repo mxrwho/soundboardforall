@@ -1,5 +1,3 @@
-// JavaScript-based soundboard rendering script with refined layout, visuals, and functional keys.
-
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.createElement("canvas");
     canvas.width = 1600;
@@ -64,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "-": "sounds2/-.wav",
         "=": "sounds2/=.wav",
         "[": "sounds2/[.wav",
-        ",": "sounds2/, .wav",
+        ",": "sounds2/,.wav",
         ";": "sounds2/;.wav",
         "q (They_are)": "sounds3/q (They_are).wav",
         "w (We_are)": "sounds3/w (We_are).wav",
