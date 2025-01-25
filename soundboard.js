@@ -188,5 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+     document.addEventListener("click", () => {
+        const video = document.getElementById("myVideo");
+        video.muted = false; // Unmute
+        video.play();        // Ensure it plays
+    });
+    
     drawScene();
 });
