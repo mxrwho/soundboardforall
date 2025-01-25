@@ -22,6 +22,7 @@
         }
         video {
             position: absolute;
+            z-index: 2;
             top: 100px; /* Adjust based on your grid position */
             left: 10px;
             width: 300px; /* Adjust size */
@@ -29,14 +30,15 @@
         }
         .image-overlay {
             position: absolute;
-            top: 150px; /* Adjust based on grid1 position */
-            left: 50px; /* Adjust based on grid1 position */
-            width: 100px; /* Adjust size */
+            z-index: 1;
+            top: 200px; /* Adjust based on grid1 position */
+            left: 100px; /* Adjust based on grid1 position */
+            width: 600px; /* Adjust size */
             height: auto;
     </style>
 </head>
 <body>
-    <video id="myVideo" autoplay loop>
+    <video id="myVideo" autoplay loop mute>
         <source src="censored.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
