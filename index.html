@@ -20,9 +20,28 @@
             background: #f9f9f9 url('cover_website_a.png') no-repeat center center;
             background-size: contain;
         }
+        video {
+            position: absolute;
+            top: 100px; /* Adjust based on your grid position */
+            left: 10px;
+            width: 300px; /* Adjust size */
+            height: auto;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 150px; /* Adjust based on grid1 position */
+            left: 50px; /* Adjust based on grid1 position */
+            width: 100px; /* Adjust size */
+            height: auto;
     </style>
 </head>
 <body>
+    <video id="myVideo" autoplay loop>
+        <source src="censored.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- PNG Image Overlay -->
+    <img src="censored_banner.png" alt="Overlay Image" class="image-overlay">
     <canvas id="soundboard"></canvas>
     <script src="soundboard.js"></script>
 </body>
